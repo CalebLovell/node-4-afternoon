@@ -31,7 +31,7 @@ app.post('/api/signout', ac.signout);
 app.get('/api/user', ac.getUser);
 app.post('/api/cart/checkout', cc.checkout);
 app.post('/api/cart', cc.add);
-app.delete('/api/cart/:id', cc.delete);
+app.delete('/api/cart', cc.delete);
 app.get('/api/search', sec.search);
 
 
