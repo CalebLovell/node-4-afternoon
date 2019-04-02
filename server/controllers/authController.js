@@ -18,7 +18,8 @@ module.exports = {
         const { session } = req;
         const { username, password } = req.body;
 
-        const user = users.find(user.username === username && user.password === password);
+        const user = users.find(
+            user => user.username === username && user.password === password);
 
         if (user) {
             session.user.username = user.username;
